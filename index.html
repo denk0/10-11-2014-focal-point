@@ -3,106 +3,156 @@
 <head>
 	<title>Focal point</title>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="focal point">
+	<meta name="keywords" content="focal point">
+
+	<link rel="shortcut icon" href="favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
+	<!-- HEADER -->
 	<header class="header">
-		<div class="cf ba-container-center">
+		<div class="cf ba-container-center container">
 			<a href="#"><img  class="logo ba-float-left" src="img/logo.png" alt="logo"></a>
-			<ul class="menu cf ba-float-right">
-				<li class="blog">
-					<a href="#">Blog</a>
-				</li>
-				<li class="login">
-					<a href="#">Login</a>
-				</li>
-			</ul>
+			<nav class="header-nav">
+				<label for="menu-toggle" class="menu-toggle"><span class="line"></span></label>
+				<input type="checkbox" id="menu-toggle">
+				<div class="overlay"></div>
+				<ul class="menu js-menu cf ba-float-right">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li >
+						<a href="#">About</a>
+					</li>
+					<li >
+						<a href="#">Services</a>
+					</li>
+					<li >
+						<a href="#">Portfolio</a>
+					</li>
+					<li >
+						<a href="#">Contacts</a>
+					</li>
+					<li class="blog">
+						<a href="#">Blog</a>
+					</li>
+					<li class="login">
+						<a href="#">Login</a>
+					</li>
+				</ul>
+			</nav>
+			
 		</div>
 	</header>
-
+	
+	<!-- SECTION WITH MAIN INFORMATION -->
 	<section class="main">
-		<div class="ba-container-center">
+		<div class="ba-container-center container">
 			<div class="content cf">
 				<h2 class="big-header">Everything you need to run your business. </h2>
 				<h3 class="small-header">We want to make life easier for small businesses.</h3>
-				<img class="girl" src="img/girl.png" alt="girl">
-				<ul>
-					<li>Web Site</li>
-					<li>Phone</li>
-					<li>E-mai</li>
-					<li>Contacts</li>
-					<li>Appointments</li>
-				</ul>
-				<form class="form" action="#" method="get">
-					<input type="text" class="name" placeholder="Name">
-					<input type="email" class="email" placeholder="Email address">
-					<input type="password" class="password" placeholder="Password">
-					<button class="ba-text-left button"><b>Start</b> 14 days free trial <b>now</b></button>
-				</form>
+				<div class="ba-grid cf">
+					<div class="ba-width-1-2">
+						<ul class="main-features">
+							<li>Web Site</li>
+							<li>Phone</li>
+							<li>E-mai</li>
+							<li>Contacts</li>
+							<li>Appointments</li>
+						</ul>
+					</div>
+					<div class="ba-width-1-2">
+						<form class="form" action="#" method="get">
+							<input type="text" class="name" placeholder="Name">
+							<input type="email" class="email" placeholder="Email address">
+							<input type="password" class="password" placeholder="Password">
+							<button class="ba-text-left button"><b>Start</b> 14 days free trial <b>now</b></button>
+						</form>
+					</div>
+					
+				</div>
 
 			</div>
 		</div>
 	</section>
+
+	<!-- SECTION WITH BISINESS FEATURES -->
 	<section class="business">
-		<div class="ba-container-center">
+		<div class="ba-container-center  container">
 			<div class="login-here">
 				<span>Already have an account?</span>
 				<a href="#" title="Login Here">Login Here.</a>
 			</div>
-			<h2 class="header-business">Your business needs to make money.</h2>
+			<h2 class="header-business"><span>Your business needs to make money.</span></h2>
 			<h3 class="spend-time">Not spend time on setting up web site and mailboxes.</h3>
 			<ul class="cf list">
 				<li class="profile">
-					<h4><b>Prifile</b> Business name, address, services.</h4>
-					<p>It’s just the basic information about your business - what’s you name, what you do, where you are.</p>
+					<h4 class="list-header"><b>Prifile</b> Business name, address, services.</h4>
+					<p class="list-caption">It’s just the basic information about your business - what’s you name, what you do, where you are.</p>
 				</li>
 				<li class="e-mail">
-					<h4><b>E-mail</b> Professional grade communication.</h4>
-					<p>Our intelligent e-mail system tracks entire context of customer interaction - e-mails, phone calls, appointments, visit notes.</p>
+					<h4 class="list-header"><b>E-mail</b> Professional grade communication.</h4>
+					<p class="list-caption">Our intelligent e-mail system tracks entire context of customer interaction - e-mails, phone calls, appointments, visit notes.</p>
 				</li>
 				<li class="website">
-					<h4><b>Website</b> How the world sees you.</h4>
-					<p>Get rid of cluttered inbox? Forget that. Email addresse for everyone in your team. Message mean action.</p>
+					<h4 class="list-header"><b>Website</b> How the world sees you.</h4>
+					<p class="list-caption">Get rid of cluttered inbox? Forget that. Email addresse for everyone in your team. Message mean action.</p>
 				</li>
 				<li class="appointments">
-					<h4><b>Appointments</b> We are all on the clock.</h4>
-					<p>We make scheduling multi-sessions, classes and events really easy for you and your clients. And we won’t let them forget either.</p>
+					<h4 class="list-header"><b>Appointments</b> We are all on the clock.</h4>
+					<p class="list-caption">We make scheduling multi-sessions, classes and events really easy for you and your clients. And we won’t let them forget either.</p>
 				</li>
 				<li class="phone">
-					<h4><b>Phone</b> Essential business tool.</h4>
-					<p>We give you a phone number for your clients to call, be transferred to a cell or leave messages. With extensions and voice mail for every employee.</p>
+					<h4 class="list-header"><b>Phone</b> Essential business tool.</h4>
+					<p class="list-caption">We give you a phone number for your clients to call, be transferred to a cell or leave messages. With extensions and voice mail for every employee.</p>
 				</li>
 				<li class="contacts">
-					<h4><b>Contacts</b> Client, staff, vendors.</h4>
-					<p>We track all the activities associated with any person you have in your address book and keep your notes.</p>
+					<h4 class="list-header"><b>Contacts</b> Client, staff, vendors.</h4>
+					<p class="list-caption">We track all the activities associated with any person you have in your address book and keep your notes.</p>
 				</li>
 			</ul>
 			<p class="caption">You will eventually need more apps. We have plenty in our Marketplace. And they are all seamlessly integrated.</p>
-			<img src="img/money.png" alt="money" class="money">
+			<!-- <img src="img/money.png" alt="money" class="money"> -->
 		</div>
 	</section>
+
+	<!-- SECTION "HELP" -->
 	<section class="help">
-		<div class="ba-container-center">
-			<h2>We love helping small business.</h2>
-			<h3>Help us help you - the sooner the better.</h3>
+		<div class="ba-container-center  container">
+			<h2 class="help-header-big"><span>We love helping small business.</span></h2>
+			<h3 class="help-header-small">Help us help you - the sooner the better.</h3>
 		</div>	
 	</section>
+
+	<!-- PRE_FOOTER, WITH BUTTON START FREE -->
 	<div class="pre-footer">
-		<div class="start-free ba-container-center">
+		<div class="start-free ba-container-center cf container">
 			<span>Start your free, no-risk, 14 day trial.</span>
 			<a href="#" class="get-started">Get started now</a>
 		</div>
 	</div>
+
+	<!-- FOOTER -->
 	<footer class="footer">
-		<div class="ba-container-center cf">
+		<div class="ba-container-center cf container">
 			<div class="copyright">
 				© 2012-2013
 				<a href="#">Focal Point.</a>
 			</div>
-			<nav class="footer-nav">
+			<nav class="footer-nav ba-container-center">
 				<ul class="cf">
 					<li><a href="#">Terms of Service</a></li>
 					<li><a href="#">Privacy</a></li>
